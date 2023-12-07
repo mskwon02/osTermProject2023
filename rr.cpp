@@ -22,7 +22,7 @@
 #define TERMINATED 3
 
 //전체 자식 프로세스 갯수
-#define CHILDPROCESSNUM 10
+#define CHILDPROCESSNUM 5
 
 using namespace std;
 // ipc메시지 구조체
@@ -74,7 +74,7 @@ void contextSwitch();
 void dispatch();
 //현재 상황 log로 찍는 함수
 void printLog() {
-	cout<<"----------"<<timeTickPassed<<" 번째 타임틱 실행 후 ----------"<<endl;
+	cout<<"----------"<<timeTickPassed<<" 번째 타임틱 ----------"<<endl;
 	if(runningPcb==NULL) {
 		cout<<"현재 cpu 차지 pid: "<<"None"<<endl;
 		cout<<"remain cpu burst: "<<"None"<<endl<<endl;
@@ -101,43 +101,37 @@ void printLog() {
 		tempIoQueue.pop();
 	}
 	cout<<endl<<endl;
-	cout<<runningPcbRunTick<<endl;
+	cout<<"runningPcbRunTick: "<<runningPcbRunTick<<endl;
 }
 //--------타임 틱마다 실행될 내용
 void perTimeTick(int signum) {
-	//현재 실행중인 pcb없다면
-	if(runningPcb==NULL) {
-		dispatch();
-	} else {
-		if(runningPcb->remainCpuBurst==0) {
-			Msg msg;
-			msg.type=runningPcb->pid;
-			msg.content=TERMINATED;
+    // 현재 실행 중인 pcb가 없으면 새로운 pcb를 실행
+    if (runningPcb == NULL) {
+        dispatch();
+    } else {
+        // 현재 pcb의 CPU 버스트 시간 감소
+        runningPcb->remainCpuBurst--;
+        runningPcbRunTick++;
 
-      
-			//종료하라는 메시지 보낸다
-			msgsnd(msgQueId,&msg,10,IPC_NOWAIT);
-			contextSwitch();
-		} else if(runningPcbRunTick>=timeslice) {
-			contextSwitch();
-		} else {
-      //해당pcb가 처음 run 된거였다면
-      if(runningPcb->firstRun == true){
-        schedulingMetricMap[runningPcb->pid].arrivalTick=timeTickPassed+1;
-        runningPcb->firstRun=false;
-      }
-			(runningPcb->remainCpuBurst)--;
-			runningPcbRunTick++;
-		}
-	}
-	//디스패치 조건 확인
-	//디스패치 되는 경우
-	//1. 현재 프로세스의 cpu burst 0인 경우
-	//2. 현재 프로세스 io 시작시간인 경우
-	//log 찍기
-	timeTickPassed++;
-	printLog();
+        // CPU 버스트가 완료되면, 프로세스 종료 처리
+        if (runningPcb->remainCpuBurst == 0) {
+            Msg msg;
+            msg.type = runningPcb->pid;
+            msg.content = TERMINATED;
+            msgsnd(msgQueId, &msg, sizeof(Msg), IPC_NOWAIT);
+            contextSwitch();
+        }
+        // 타임 슬라이스 초과 시, 다음 프로세스로 전환
+        else if (runningPcbRunTick >= timeslice) {
+            contextSwitch();
+        }
+    }
+
+    // 로그 출력 및 타임틱 증가
+    printLog();
+    timeTickPassed++;
 }
+
 void dispatch() {
 	if(!readyQueue.empty()) {
 		//맨 앞의 pcb를 꺼내 현재 실행중인 pcb로 설정
@@ -149,14 +143,20 @@ void dispatch() {
 		msg.content=RUNNING;
 		//꺼낸 pcb의 pid와 동일한 자식프로세스에게 너 실행해 라는 메시지 전송
 		msgsnd(1398,&msg,10,IPC_NOWAIT);
+
+    //만약 새로 꺼낸 pcb가 처음으로 running상태가 된거라면 firstruntime기록
+    if(runningPcb->firstRun == true){
+        schedulingMetricMap[runningPcb->pid].arrivalTick=timeTickPassed;
+        runningPcb->firstRun=false;
+      }
 	}else{
     runningPcb=NULL;
   }
 }
 //디스패치 함수
 void contextSwitch() {
-	//현재 실행중이 pcb의 remainCpuBurst가 남아있다면 ready큐의 맨 뒤에 넣어야함
-	if(runningPcb->remainCpuBurst >0) {
+	//현재 실행중인 pcb의 remainCpuBurst가 남아있다면 ready큐의 맨 뒤에 넣어야함
+	if(runningPcb!=NULL && runningPcb->remainCpuBurst >0) {
 		readyQueue.push(runningPcb);
 	}
 	dispatch();
@@ -213,7 +213,7 @@ int main() {
 			while(1) {
 				//메시지큐에 가져올 메시지가 있을때까지 대기
 				msgrcv(msgQueId, &msg, 50, myPid,0);
-        cout<<msg.content<<endl;
+        cout<<"msg content:"<<msg.content<<endl;
 				//현재 상태가 running하라는 메시지였으면
 				if (msg.content==RUNNING) {
 					//io작업 할까 말까
@@ -235,7 +235,6 @@ int main() {
 			exit(1);
 		}
 	}
-	printLog();
 	// //0번쨰 타임 틱에는 readyQueue의 첫 번째 pcb뽑아서 넣는다
 	// runningPcb=readyQueue.front();
 	// readyQueue.pop();
@@ -254,6 +253,6 @@ int main() {
   for(auto info:schedulingMetricMap){
     cout<<"arrivalTime:"<<info.second.arrivalTick<<endl;
   }
-	
+	cout<<"totalTimeTick: "<<timeTickPassed-1<<endl;
 	return 0;
 }
