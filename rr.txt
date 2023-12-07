@@ -7,736 +7,804 @@ Time Slice: 5
 remain cpu burst: None
 
 ready Queue[pid, remain cpu burst]
-: [1641,8] | [1642,1] | [1643,7] | [1644,3] | [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | 
+: [1972,10] | [1973,5] | [1974,9] | [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 0
 ----------1 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1641
-remain cpu burst: 8
+현재 cpu 차지 pid: 1972
+remain cpu burst: 10
 
 ready Queue[pid, remain cpu burst]
-: [1642,1] | [1643,7] | [1644,3] | [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | 
+: [1973,5] | [1974,9] | [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 0
 ----------2 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1641
-remain cpu burst: 7
+현재 cpu 차지 pid: 1972
+remain cpu burst: 9
 
 ready Queue[pid, remain cpu burst]
-: [1642,1] | [1643,7] | [1644,3] | [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | 
+: [1973,5] | [1974,9] | [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 1
 ----------3 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1641
-remain cpu burst: 6
+현재 cpu 차지 pid: 1972
+remain cpu burst: 8
 
 ready Queue[pid, remain cpu burst]
-: [1642,1] | [1643,7] | [1644,3] | [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | 
+: [1973,5] | [1974,9] | [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 2
 ----------4 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1641
-remain cpu burst: 5
+현재 cpu 차지 pid: 1972
+remain cpu burst: 7
 
 ready Queue[pid, remain cpu burst]
-: [1642,1] | [1643,7] | [1644,3] | [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | 
+: [1973,5] | [1974,9] | [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 3
 ----------5 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1641
-remain cpu burst: 4
+현재 cpu 차지 pid: 1972
+remain cpu burst: 6
 
 ready Queue[pid, remain cpu burst]
-: [1642,1] | [1643,7] | [1644,3] | [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | 
+: [1973,5] | [1974,9] | [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 4
 ----------6 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1641
-remain cpu burst: 3
+현재 cpu 차지 pid: 1972
+remain cpu burst: 5
 
 ready Queue[pid, remain cpu burst]
-: [1642,1] | [1643,7] | [1644,3] | [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | 
+: [1973,5] | [1974,9] | [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 5
 ----------7 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1642
-remain cpu burst: 1
+현재 cpu 차지 pid: 1973
+remain cpu burst: 5
 
 ready Queue[pid, remain cpu burst]
-: [1643,7] | [1644,3] | [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | 
+: [1974,9] | [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 0
 ----------8 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1642
-remain cpu burst: 0
+현재 cpu 차지 pid: 1973
+remain cpu burst: 4
 
 ready Queue[pid, remain cpu burst]
-: [1643,7] | [1644,3] | [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | 
+: [1974,9] | [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 1
 ----------9 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1643
-3
-remain cpu burst: 7
+현재 cpu 차지 pid: 1973
+remain cpu burst: 3
 
 ready Queue[pid, remain cpu burst]
-: [1644,3] | [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-0
-0 번째 자식 종료
-----------10 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1643
-remain cpu burst: 6
-
-ready Queue[pid, remain cpu burst]
-: [1644,3] | [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-1
-----------11 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1643
-remain cpu burst: 5
-
-ready Queue[pid, remain cpu burst]
-: [1644,3] | [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | 
+: [1974,9] | [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 2
-----------12 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1643
-remain cpu burst: 4
+----------10 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1973
+remain cpu burst: 2
 
 ready Queue[pid, remain cpu burst]
-: [1644,3] | [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | 
+: [1974,9] | [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 3
-----------13 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1643
-remain cpu burst: 3
+----------11 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1973
+remain cpu burst: 1
 
 ready Queue[pid, remain cpu burst]
-: [1644,3] | [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | 
+: [1974,9] | [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 4
-----------14 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1643
-remain cpu burst: 2
+----------12 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1973
+remain cpu burst: 0
 
 ready Queue[pid, remain cpu burst]
-: [1644,3] | [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | 
+: [1974,9] | [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 5
-----------15 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1644
-remain cpu burst: 3
+----------13 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1974
+3
+remain cpu burst: 9
 
 ready Queue[pid, remain cpu burst]
-: [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | 
+: [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 0
-----------16 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1644
-remain cpu burst: 2
+----------14 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1974
+remain cpu burst: 8
 
 ready Queue[pid, remain cpu burst]
-: [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | 
+: [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 1
-----------17 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1644
-remain cpu burst: 1
+----------15 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1974
+remain cpu burst: 7
 
 ready Queue[pid, remain cpu burst]
-: [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | 
+: [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 2
-----------18 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1644
-remain cpu burst: 0
+----------16 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1974
+remain cpu burst: 6
 
 ready Queue[pid, remain cpu burst]
-: [1645,8] | [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | 
+: [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 3
-----------19 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1645
-3
-remain cpu burst: 8
+----------17 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1974
+remain cpu burst: 5
 
 ready Queue[pid, remain cpu burst]
-: [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | 
+: [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+4
+----------18 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1974
+remain cpu burst: 4
+
+ready Queue[pid, remain cpu burst]
+: [1975,4] | [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+5
+----------19 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1975
+remain cpu burst: 4
+
+ready Queue[pid, remain cpu burst]
+: [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 0
-1 번째 자식 종료
 ----------20 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1645
-remain cpu burst: 7
+현재 cpu 차지 pid: 1975
+remain cpu burst: 3
 
 ready Queue[pid, remain cpu burst]
-: [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | 
+: [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 1
 ----------21 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1645
-remain cpu burst: 6
+현재 cpu 차지 pid: 1975
+remain cpu burst: 2
 
 ready Queue[pid, remain cpu burst]
-: [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | 
+: [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 2
 ----------22 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1645
-remain cpu burst: 5
+현재 cpu 차지 pid: 1975
+remain cpu burst: 1
 
 ready Queue[pid, remain cpu burst]
-: [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | 
+: [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 3
 ----------23 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1645
-remain cpu burst: 4
+현재 cpu 차지 pid: 1975
+remain cpu burst: 0
 
 ready Queue[pid, remain cpu burst]
-: [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | 
+: [1976,1] | [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 4
 ----------24 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1645
-remain cpu burst: 3
+현재 cpu 차지 pid: 1976
+3
+remain cpu burst: 1
 
 ready Queue[pid, remain cpu burst]
-: [1646,1] | [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | 
+: [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
-5
+0
 ----------25 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1646
-remain cpu burst: 1
+현재 cpu 차지 pid: 1976
+remain cpu burst: 0
 
 ready Queue[pid, remain cpu burst]
-: [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | [1645,3] | 
+: [1977,9] | [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
-0
+1
 ----------26 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1646
-remain cpu burst: 0
-
-ready Queue[pid, remain cpu burst]
-: [1647,6] | [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | [1645,3] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-1
-----------27 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1647
-3
-remain cpu burst: 6
-
-ready Queue[pid, remain cpu burst]
-: [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | [1645,3] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-0
-2 번째 자식 종료
-----------28 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1647
-remain cpu burst: 5
-
-ready Queue[pid, remain cpu burst]
-: [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | [1645,3] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-1
-----------29 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1647
-remain cpu burst: 4
-
-ready Queue[pid, remain cpu burst]
-: [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | [1645,3] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-2
-----------30 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1647
-remain cpu burst: 3
-
-ready Queue[pid, remain cpu burst]
-: [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | [1645,3] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-3
-----------31 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1647
-remain cpu burst: 2
-
-ready Queue[pid, remain cpu burst]
-: [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | [1645,3] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-4
-----------32 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1647
-remain cpu burst: 1
-
-ready Queue[pid, remain cpu burst]
-: [1648,7] | [1649,1] | [1650,9] | [1641,3] | [1643,2] | [1645,3] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-5
-----------33 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1648
-remain cpu burst: 7
-
-ready Queue[pid, remain cpu burst]
-: [1649,1] | [1650,9] | [1641,3] | [1643,2] | [1645,3] | [1647,1] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-0
-----------34 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1648
-remain cpu burst: 6
-
-ready Queue[pid, remain cpu burst]
-: [1649,1] | [1650,9] | [1641,3] | [1643,2] | [1645,3] | [1647,1] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-1
-----------35 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1648
-remain cpu burst: 5
-
-ready Queue[pid, remain cpu burst]
-: [1649,1] | [1650,9] | [1641,3] | [1643,2] | [1645,3] | [1647,1] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-2
-----------36 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1648
-remain cpu burst: 4
-
-ready Queue[pid, remain cpu burst]
-: [1649,1] | [1650,9] | [1641,3] | [1643,2] | [1645,3] | [1647,1] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-3
-----------37 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1648
-remain cpu burst: 3
-
-ready Queue[pid, remain cpu burst]
-: [1649,1] | [1650,9] | [1641,3] | [1643,2] | [1645,3] | [1647,1] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-4
-----------38 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1648
-remain cpu burst: 2
-
-ready Queue[pid, remain cpu burst]
-: [1649,1] | [1650,9] | [1641,3] | [1643,2] | [1645,3] | [1647,1] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-5
-----------39 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1649
-remain cpu burst: 1
-
-ready Queue[pid, remain cpu burst]
-: [1650,9] | [1641,3] | [1643,2] | [1645,3] | [1647,1] | [1648,2] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-0
-----------40 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1649
-remain cpu burst: 0
-
-ready Queue[pid, remain cpu burst]
-: [1650,9] | [1641,3] | [1643,2] | [1645,3] | [1647,1] | [1648,2] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-1
-----------41 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1650
+현재 cpu 차지 pid: 1977
 3
 remain cpu burst: 9
 
 ready Queue[pid, remain cpu burst]
-: [1641,3] | [1643,2] | [1645,3] | [1647,1] | [1648,2] | 
+: [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 0
-3 번째 자식 종료
-----------42 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1650
+----------27 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1977
 remain cpu burst: 8
 
 ready Queue[pid, remain cpu burst]
-: [1641,3] | [1643,2] | [1645,3] | [1647,1] | [1648,2] | 
+: [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 1
-----------43 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1650
+----------28 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1977
 remain cpu burst: 7
 
 ready Queue[pid, remain cpu burst]
-: [1641,3] | [1643,2] | [1645,3] | [1647,1] | [1648,2] | 
+: [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 2
-----------44 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1650
+----------29 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1977
 remain cpu burst: 6
 
 ready Queue[pid, remain cpu burst]
-: [1641,3] | [1643,2] | [1645,3] | [1647,1] | [1648,2] | 
+: [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 3
-----------45 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1650
+----------30 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1977
 remain cpu burst: 5
 
 ready Queue[pid, remain cpu burst]
-: [1641,3] | [1643,2] | [1645,3] | [1647,1] | [1648,2] | 
+: [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 4
-----------46 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1650
+----------31 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1977
 remain cpu burst: 4
 
 ready Queue[pid, remain cpu burst]
-: [1641,3] | [1643,2] | [1645,3] | [1647,1] | [1648,2] | 
+: [1978,8] | [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 5
+----------32 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1978
+remain cpu burst: 8
+
+ready Queue[pid, remain cpu burst]
+: [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | [1977,4] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+0
+----------33 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1978
+remain cpu burst: 7
+
+ready Queue[pid, remain cpu burst]
+: [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | [1977,4] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+1
+----------34 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1978
+remain cpu burst: 6
+
+ready Queue[pid, remain cpu burst]
+: [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | [1977,4] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+2
+----------35 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1978
+remain cpu burst: 5
+
+ready Queue[pid, remain cpu burst]
+: [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | [1977,4] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+3
+----------36 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1978
+remain cpu burst: 4
+
+ready Queue[pid, remain cpu burst]
+: [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | [1977,4] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+4
+----------37 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1978
+remain cpu burst: 3
+
+ready Queue[pid, remain cpu burst]
+: [1979,4] | [1980,2] | [1981,7] | [1972,5] | [1974,4] | [1977,4] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+5
+----------38 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1979
+remain cpu burst: 4
+
+ready Queue[pid, remain cpu burst]
+: [1980,2] | [1981,7] | [1972,5] | [1974,4] | [1977,4] | [1978,3] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+0
+----------39 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1979
+remain cpu burst: 3
+
+ready Queue[pid, remain cpu burst]
+: [1980,2] | [1981,7] | [1972,5] | [1974,4] | [1977,4] | [1978,3] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+1
+----------40 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1979
+remain cpu burst: 2
+
+ready Queue[pid, remain cpu burst]
+: [1980,2] | [1981,7] | [1972,5] | [1974,4] | [1977,4] | [1978,3] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+2
+----------41 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1979
+remain cpu burst: 1
+
+ready Queue[pid, remain cpu burst]
+: [1980,2] | [1981,7] | [1972,5] | [1974,4] | [1977,4] | [1978,3] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+3
+----------42 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1979
+remain cpu burst: 0
+
+ready Queue[pid, remain cpu burst]
+: [1980,2] | [1981,7] | [1972,5] | [1974,4] | [1977,4] | [1978,3] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+4
+----------43 번째 타임틱 실행 후 ----------
+3
+현재 cpu 차지 pid: 1980
+remain cpu burst: 2
+
+ready Queue[pid, remain cpu burst]
+: [1981,7] | [1972,5] | [1974,4] | [1977,4] | [1978,3] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+0
+----------44 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1980
+remain cpu burst: 1
+
+ready Queue[pid, remain cpu burst]
+: [1981,7] | [1972,5] | [1974,4] | [1977,4] | [1978,3] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+1
+----------45 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1980
+remain cpu burst: 0
+
+ready Queue[pid, remain cpu burst]
+: [1981,7] | [1972,5] | [1974,4] | [1977,4] | [1978,3] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+2
+----------46 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1981
+3
+remain cpu burst: 7
+
+ready Queue[pid, remain cpu burst]
+: [1972,5] | [1974,4] | [1977,4] | [1978,3] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+0
 ----------47 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1641
-remain cpu burst: 3
+현재 cpu 차지 pid: 1981
+remain cpu burst: 6
 
 ready Queue[pid, remain cpu burst]
-: [1643,2] | [1645,3] | [1647,1] | [1648,2] | [1650,4] | 
+: [1972,5] | [1974,4] | [1977,4] | [1978,3] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
-0
+1
 ----------48 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1641
-remain cpu burst: 2
+현재 cpu 차지 pid: 1981
+remain cpu burst: 5
 
 ready Queue[pid, remain cpu burst]
-: [1643,2] | [1645,3] | [1647,1] | [1648,2] | [1650,4] | 
+: [1972,5] | [1974,4] | [1977,4] | [1978,3] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
-1
+2
 ----------49 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1641
-remain cpu burst: 1
+현재 cpu 차지 pid: 1981
+remain cpu burst: 4
 
 ready Queue[pid, remain cpu burst]
-: [1643,2] | [1645,3] | [1647,1] | [1648,2] | [1650,4] | 
+: [1972,5] | [1974,4] | [1977,4] | [1978,3] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
-2
+3
 ----------50 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1641
-remain cpu burst: 0
-
-ready Queue[pid, remain cpu burst]
-: [1643,2] | [1645,3] | [1647,1] | [1648,2] | [1650,4] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-3
-----------51 번째 타임틱 실행 후 ----------
-3
-현재 cpu 차지 pid: 1643
-remain cpu burst: 2
-
-ready Queue[pid, remain cpu burst]
-: [1645,3] | [1647,1] | [1648,2] | [1650,4] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-0
-4 번째 자식 종료
-----------52 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1643
-remain cpu burst: 1
-
-ready Queue[pid, remain cpu burst]
-: [1645,3] | [1647,1] | [1648,2] | [1650,4] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-1
-----------53 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1643
-remain cpu burst: 0
-
-ready Queue[pid, remain cpu burst]
-: [1645,3] | [1647,1] | [1648,2] | [1650,4] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-2
-----------54 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1645
-3
+현재 cpu 차지 pid: 1981
 remain cpu burst: 3
 
 ready Queue[pid, remain cpu burst]
-: [1647,1] | [1648,2] | [1650,4] | 
+: [1972,5] | [1974,4] | [1977,4] | [1978,3] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+4
+----------51 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1981
+remain cpu burst: 2
+
+ready Queue[pid, remain cpu burst]
+: [1972,5] | [1974,4] | [1977,4] | [1978,3] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+5
+----------52 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1972
+remain cpu burst: 5
+
+ready Queue[pid, remain cpu burst]
+: [1974,4] | [1977,4] | [1978,3] | [1981,2] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 0
-5 번째 자식 종료
-----------55 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1645
-remain cpu burst: 2
+----------53 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1972
+remain cpu burst: 4
 
 ready Queue[pid, remain cpu burst]
-: [1647,1] | [1648,2] | [1650,4] | 
+: [1974,4] | [1977,4] | [1978,3] | [1981,2] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 1
-----------56 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1645
-remain cpu burst: 1
+----------54 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1972
+remain cpu burst: 3
 
 ready Queue[pid, remain cpu burst]
-: [1647,1] | [1648,2] | [1650,4] | 
+: [1974,4] | [1977,4] | [1978,3] | [1981,2] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 2
-----------57 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1645
-remain cpu burst: 0
+----------55 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1972
+remain cpu burst: 2
 
 ready Queue[pid, remain cpu burst]
-: [1647,1] | [1648,2] | [1650,4] | 
+: [1974,4] | [1977,4] | [1978,3] | [1981,2] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 3
-----------58 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1647
-3
+----------56 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1972
 remain cpu burst: 1
 
 ready Queue[pid, remain cpu burst]
-: [1648,2] | [1650,4] | 
+: [1974,4] | [1977,4] | [1978,3] | [1981,2] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+4
+----------57 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1972
+remain cpu burst: 0
+
+ready Queue[pid, remain cpu burst]
+: [1974,4] | [1977,4] | [1978,3] | [1981,2] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+5
+----------58 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1974
+3
+remain cpu burst: 4
+
+ready Queue[pid, remain cpu burst]
+: [1977,4] | [1978,3] | [1981,2] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 0
-6 번째 자식 종료
 ----------59 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1647
-remain cpu burst: 0
+현재 cpu 차지 pid: 1974
+remain cpu burst: 3
 
 ready Queue[pid, remain cpu burst]
-: [1648,2] | [1650,4] | 
+: [1977,4] | [1978,3] | [1981,2] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 1
 ----------60 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1648
-3
+현재 cpu 차지 pid: 1974
 remain cpu burst: 2
 
 ready Queue[pid, remain cpu burst]
-: [1650,4] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-0
-7 번째 자식 종료
-----------61 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1648
-remain cpu burst: 1
-
-ready Queue[pid, remain cpu burst]
-: [1650,4] | 
-
-IO Queue[pid, remain IO burst]
-: 
-
-1
-----------62 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1648
-remain cpu burst: 0
-
-ready Queue[pid, remain cpu burst]
-: [1650,4] | 
+: [1977,4] | [1978,3] | [1981,2] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 2
-----------63 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1650
+----------61 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1974
+remain cpu burst: 1
+
+ready Queue[pid, remain cpu burst]
+: [1977,4] | [1978,3] | [1981,2] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
 3
+----------62 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1974
+remain cpu burst: 0
+
+ready Queue[pid, remain cpu burst]
+: [1977,4] | [1978,3] | [1981,2] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+4
+----------63 번째 타임틱 실행 후 ----------
+3
+현재 cpu 차지 pid: 1977
 remain cpu burst: 4
 
 ready Queue[pid, remain cpu burst]
-: 
+: [1978,3] | [1981,2] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 0
-8 번째 자식 종료
 ----------64 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1650
+현재 cpu 차지 pid: 1977
 remain cpu burst: 3
 
 ready Queue[pid, remain cpu burst]
-: 
+: [1978,3] | [1981,2] | 
 
 IO Queue[pid, remain IO burst]
 : 
 
 1
 ----------65 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1650
+현재 cpu 차지 pid: 1977
+remain cpu burst: 2
+
+ready Queue[pid, remain cpu burst]
+: [1978,3] | [1981,2] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+2
+----------66 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1977
+remain cpu burst: 1
+
+ready Queue[pid, remain cpu burst]
+: [1978,3] | [1981,2] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+3
+----------67 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1977
+remain cpu burst: 0
+
+ready Queue[pid, remain cpu burst]
+: [1978,3] | [1981,2] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+4
+----------68 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1978
+3
+remain cpu burst: 3
+
+ready Queue[pid, remain cpu burst]
+: [1981,2] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+0
+----------69 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1978
+remain cpu burst: 2
+
+ready Queue[pid, remain cpu burst]
+: [1981,2] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+1
+----------70 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1978
+remain cpu burst: 1
+
+ready Queue[pid, remain cpu burst]
+: [1981,2] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+2
+----------71 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1978
+remain cpu burst: 0
+
+ready Queue[pid, remain cpu burst]
+: [1981,2] | 
+
+IO Queue[pid, remain IO burst]
+: 
+
+3
+----------72 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1981
+3
 remain cpu burst: 2
 
 ready Queue[pid, remain cpu burst]
@@ -745,9 +813,9 @@ ready Queue[pid, remain cpu burst]
 IO Queue[pid, remain IO burst]
 : 
 
-2
-----------66 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1650
+0
+----------73 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1981
 remain cpu burst: 1
 
 ready Queue[pid, remain cpu burst]
@@ -756,9 +824,9 @@ ready Queue[pid, remain cpu burst]
 IO Queue[pid, remain IO burst]
 : 
 
-3
-----------67 번째 타임틱 실행 후 ----------
-현재 cpu 차지 pid: 1650
+1
+----------74 번째 타임틱 실행 후 ----------
+현재 cpu 차지 pid: 1981
 remain cpu burst: 0
 
 ready Queue[pid, remain cpu burst]
@@ -767,8 +835,8 @@ ready Queue[pid, remain cpu burst]
 IO Queue[pid, remain IO burst]
 : 
 
-4
-----------68 번째 타임틱 실행 후 ----------
+2
+----------75 번째 타임틱 실행 후 ----------
 현재 cpu 차지 pid: None
 3
 remain cpu burst: None
@@ -779,5 +847,15 @@ ready Queue[pid, remain cpu burst]
 IO Queue[pid, remain IO burst]
 : 
 
-4
-9 번째 자식 종료
+2
+자식프로세스 모두 종료
+arrivalTime:2
+arrivalTime:8
+arrivalTime:14
+arrivalTime:20
+arrivalTime:25
+arrivalTime:27
+arrivalTime:33
+arrivalTime:39
+arrivalTime:44
+arrivalTime:47

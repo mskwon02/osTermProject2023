@@ -12,11 +12,18 @@
 #include <time.h>
 #include <unistd.h>
 #include <iostream>
+
+#include <map>
+
 //Pcb state들 지정
 #define RUNNING 0
 #define READY 1
 #define WAITING 2
 #define TERMINATED 3
+
+//전체 자식 프로세스 갯수
+#define CHILDPROCESSNUM 10
+
 using namespace std;
 // ipc메시지 구조체
 struct Msg {
@@ -32,8 +39,21 @@ struct Pcb {
 	int remainCpuBurst;
 	int ioStartTick=0;
 	int ioDurationTIck=0;
+  bool firstRun=true;
 }
 ;
+
+struct ProcessTimeInfo{
+
+  //프로세스가 처음으로 ready큐에 들어온 시간(틱)
+  int arrivalTick=0;
+  //프로세스가 처음으로 run된 시간(틱)
+  int firstRunTick;
+  //프로세스가 완료될때까지(cpu burst 0될때까지) 걸린 시간(틱)
+  int CompleteTick;
+};
+//스케쥴링 성능(scheduling metric) 확인할 정보 담는 map객체
+map<int, ProcessTimeInfo> schedulingMetricMap;
 
 //timeslice 설정
 int timeslice = 5;
@@ -101,6 +121,11 @@ void perTimeTick(int signum) {
 		} else if(runningPcbRunTick>=timeslice) {
 			contextSwitch();
 		} else {
+      //해당pcb가 처음 run 된거였다면
+      if(runningPcb->firstRun == true){
+        schedulingMetricMap[runningPcb->pid].arrivalTick=timeTickPassed+1;
+        runningPcb->firstRun=false;
+      }
 			(runningPcb->remainCpuBurst)--;
 			runningPcbRunTick++;
 		}
@@ -162,8 +187,10 @@ int main() {
 	signal(SIGALRM, perTimeTick);
 	cout<<"=========== OS Term Project ==========="<<endl<<endl;
 	cout<<"Time Slice: "<<timeslice<<endl<<endl;
+
+
 	//자식 프로세스들 생성 파트
-	for (int i=0; i<10;i++) {
+	for (int i=0; i<CHILDPROCESSNUM;i++) {
 		//프로세스 생성
 		long newPid=fork();
 		//부모 프로세스에서 코드
@@ -173,16 +200,19 @@ int main() {
 			// cpuburst의 범위는 1~10
 			pcbP->remainCpuBurst=rand()%10 +1;
 			readyQueue.push(pcbP);
+      ProcessTimeInfo processTimeInfo;
+      schedulingMetricMap[newPid]=processTimeInfo;
 		}
 		//자식 프로세스에서 코드 
     else if (newPid == 0) {
-			long msgIdx=getpid();
+      bool runBefore=false;
+			long myPid=getpid();
 			int doIo, ioStartTick, ioDurationTick;
 			Msg msg;
-			msg.type = msgIdx;
+			msg.type = myPid;
 			while(1) {
 				//메시지큐에 가져올 메시지가 있을때까지 대기
-				msgrcv(msgQueId, &msg, 50, msgIdx,0);
+				msgrcv(msgQueId, &msg, 50, myPid,0);
         cout<<msg.content<<endl;
 				//현재 상태가 running하라는 메시지였으면
 				if (msg.content==RUNNING) {
@@ -215,8 +245,14 @@ int main() {
 	setitimer(ITIMER_REAL, &timer, NULL);
 
   //자식 프로세스 모두 종료될 때까지 기다린다
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < CHILDPROCESSNUM; i++) {
     wait(NULL); // 여기서 NULL은 종료 상태를 받지 않겠다는 의미입니다.
+  }
+
+  cout<<"자식프로세스 모두 종료"<<endl;
+
+  for(auto info:schedulingMetricMap){
+    cout<<"arrivalTime:"<<info.second.arrivalTick<<endl;
   }
 	
 	return 0;
